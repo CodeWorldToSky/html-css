@@ -1,0 +1,28 @@
+/* 指定css文件的编码  如果当前css文件中有中文的情况下要设置编码*/
+@charset "utf-8";
+/* 如果css文件太多的话可以在单独的css文件中利用@import来引入base.css */
+@import url("./base.css");   
+
+/* 尽量多写css 头部一个css 内容一个css 底部一个css  最终会打包成一个css*/
+
+/* 单个选中h1元素 */
+h1 {
+    font-size: 50px;
+}
+
+div {
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+
+/* 并集选择器 */
+h1, p, a {
+    color: red;
+}
+
+/* 类选择器 */
+.red {
+    color: red;
+    /* font-family: "华文宋体"; */
+}
