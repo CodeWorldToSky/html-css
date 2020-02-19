@@ -34,6 +34,14 @@
         /* [title$="one"] {
             background-color: #00f;
         } */
+
+        /* title|= "one" */
+        /* title属性值正好等于one 或者one开头且后面紧跟着连字符-的元素*/
+        /* 一般用在 lang |= "en"  lang属性上面 en-US  en-UK  英式英语和美式英语 */
+
+        /* title ~= "one"   这种相当于类选择器   .one  有没有这个类  一个元素有多个类,每个类用空格隔开 */  
+        /* title属性值等于one单词 或者包含单词one的元素(单词one与其他词之间必须以空格隔开)*/
+
     </style>
 </head>
 <body>

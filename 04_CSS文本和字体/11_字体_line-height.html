@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
+        /* 一行文本占据的高度看起来等于文本的高度 其实不正确  上下还多出来了一部分*/
+        /* Div的高度准确来说是行高撑起来的 可以只设置行高,但是必须有文本内容*/
+        /* 行高是一行文本占据的高度  让每一行文字之间有距离,读起来好读些*/
+        /* 行高是两行文字基线之间的距离 */
+        /* 行距是上一行文字的底线到下一行文字的顶线 行距其实就是一段文本除开文本内容高度以外的上半部分与下半部分的和 */
+
+        /* 为什么line-height可以让文字居中,就是因为行距会等分 */
         div {
-            height: 200px;
+            /* height: 200px; */
             line-height: 200px;
             background-color: #0f0f;
         }
