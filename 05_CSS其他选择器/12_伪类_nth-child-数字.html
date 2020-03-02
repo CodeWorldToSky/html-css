@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <style>
-        /* 1.第三个子元素 */
+        /* 1.选中子元素的第三个,只要它是子元素*/
         /* :nth-child(3) {
             color: red;
         } */
@@ -39,7 +39,8 @@
         <span>span文字内容5</span>
     </p>
 
-    <div>
+    <!-- 下面的内容都会变红色,因为吧body当成父元素,这里的div是第三个子元素 前面恰好给第三个子元素设置成了红色,  div设置成了红色,下面的strong元素会继承上面的div元素所以strong为红色 -->
+    <div>  
         <strong>strong文字内容1</strong>
         <strong>strong文字内容2</strong>
     </div>

@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
+        /* 一个元素如果没有设置某属性的值,就会跟随父元素的值
+           如果这个元素设置了自己的值,就使用自己的值 (不管是自己的还是浏览器设置的)
+           color 和 font-size 可以继承  width元素不可以继承(img 替换行内元素)
+
+           在mdn上搜索widh 然后查看the css property 这一行对应的东西  
+        */
+
         .box {
             color: red;
             font-size: 20px;
@@ -14,9 +22,9 @@
             width: 500px;
         }
 
-        img {
-            width: 100%;
-            /* width: inherit; */
+        img {    
+            width: 100%;   /*百分比相对于包含块的宽度*/
+            /* width: inherit; */    /*css中我们还可以使用强制继承*/
         }
     </style>
 </head>

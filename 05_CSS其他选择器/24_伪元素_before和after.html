@@ -10,13 +10,13 @@
             color: red;
         } */
 
-        /* 结论: 伪元素可以看成是行内元素 */
+        /* 结论: 伪元素可以看成是行内元素 不能设置宽度和高度 */
         span::before {
             content: "";
 
             /* color: red; */
             background-color: green;
-            display: inline-block;
+            display: inline-block;  /*改成行内块级元素*/
             width: 100px;
             height: 30px;
             margin-right: 20px;
